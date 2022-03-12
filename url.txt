@@ -1,2 +1,1 @@
-#https://bigota.d.miui.com/V13.0.3.1.13.DEV/miui_ARES_V13.0.3.1.13.DEV_0df786ab6a_12.0.zip
 https://bigota.d.miui.com/V13.0.3.1.15.DEV/miui_ARES_V13.0.3.1.15.DEV_da9922d345_12.0.zip
