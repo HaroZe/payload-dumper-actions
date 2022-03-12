@@ -18,7 +18,7 @@ jobs:
           
       - name: Download ROM
         run: |
-          wget -q -o ./tmp/DownloadLog.txt -O ./tmp/ROM.zip -i url.txt
+          wget -q -o /tmp/DownloadLog.txt -O ./tmp/ROM.zip -i url.txt
 
       - name: Dump payload.bin
         run: |
@@ -37,7 +37,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: DownloadLog.txt
-          path: './tmp/DownloadLog.txt'
+          path: '/tmp/DownloadLog.txt'
           
       - name: Send to WechatByServer
         run: |
