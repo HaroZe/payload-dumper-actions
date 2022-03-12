@@ -31,6 +31,14 @@ jobs:
         with:
           name: boot.img
           path: './output/boot.img'
+          
+          
+      - name: Upload to ArtifactsLog
+        uses: actions/upload-artifact@v2
+        with:
+          name: DownloadLog.txt
+          path: './tmp/DownloadLog.txt'
+          
       - name: Send to WechatByServer
         run: |
           curl "https://sctapi.ftqq.com/SCT31697TRL9eRhFmA3oYhL9uV7uuGDPM.send?title=您的小米Rom已经解压打包完成&desp=&urlencode=utf-8"
