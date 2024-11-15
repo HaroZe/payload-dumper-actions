@@ -13,12 +13,12 @@ jobs:
       - name: Install depedencies
         run: |
           mkdir tmp
-          wget https://github.com/ssut/payload-dumper-go/releases/download/1.2.0/payload-dumper-go_1.2.0_linux_amd64.tar.gz -P tmp/
-          tar zxvf ./tmp/payload-dumper-go_1.2.0_linux_amd64.tar.gz -o payload-dumper-go
+          wget https://github.com/ssut/payload-dumper-go/releases/download/1.2.2/payload-dumper-go_1.2.2_linux_amd64.tar.gz -P tmp/
+          tar zxvf ./tmp/payload-dumper-go_1.2.2_linux_amd64.tar.gz -o payload-dumper-go
           
       - name: Download ROM
         run: |
-          wget  -o /tmp/DownloadLog.txt -O ./tmp/ROM.zip -i url.txt
+          wget -O ./tmp/ROM.zip -i url.txt
 
       - name: Dump payload.bin
         run: |
@@ -33,11 +33,11 @@ jobs:
           path: './output/boot.img'
           
           
-      - name: Upload to ArtifactsLog
-        uses: actions/upload-artifact@v4
-        with:
-          name: DownloadLog.txt
-          path: '/tmp/DownloadLog.txt'
+#      - name: Upload to ArtifactsLog
+#        uses: actions/upload-artifact@v4
+#        with:
+#          name: DownloadLog.txt
+#          path: '/tmp/DownloadLog.txt'
 
 #      - name: Send to WechatByServer
 #        run: |
