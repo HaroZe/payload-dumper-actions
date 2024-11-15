@@ -1,2 +1,1 @@
-#https://bkt-sgp-miui-ota-update-alisgp.oss-ap-southeast-1.aliyuncs.com/V14.0.9.0.TLMCNXM/miui_MUNCH_V14.0.9.0.TLMCNXM_596329468b_13.0.zip
 https://bn.d.miui.com/OS1.0.5.0.ULMMIXM/miui_MUNCHGlobal_OS1.0.5.0.ULMMIXM_4cab56c7e5_14.0.zip
